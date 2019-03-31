@@ -1,0 +1,61 @@
+TOUCH.C
+=======
+
+Christopher Laforet: Original version
+Reed Shilts (v 3.0): match Berkeley unix syntax, added long filename support
+
+
+Note from Christopher Laforet:
+
+This program was created by me as a demonstration (albeit useful) for my C
+students at Elon College.  The course is sponsered by the Burlington User's
+Group, not by the college itself.
+
+Anyway, I trust that the code presented would be of some help and should
+demonstrate how simple it is to design useful utilities in C!  This project
+probably took 45 minutes to write and debug.
+
+I added a few features that are not found in most implementations of TOUCH.
+The first of these is a verbose flag and the second of these is a confirmation
+flag.  I believe that these should come in useful to many users at one time or
+another.
+
+You are free to modify this code at will, but I ask that if you add yours to
+this for re-distribution that you would include the original with it.
+
+Last, but not least, a disclaimer.  I am not responsible for the conduct of
+this program.  In other words, use at your own risk, especially if you change
+the source in some way!
+
+In version 1.xx, I prepared the code for Turbo C 2.0.  This version has been
+created under MSC 5.1 and is a bound application to work both under OS/2 and
+DOS.
+
+
+===========================================
+Note from Reed Shilts:
+    This is the best TOUCH I've seen in the DOS/OS2 world (accolades
+    to Christopher Laforet), but the syntax didn't match UNIX and
+    it lacked long filename support.
+    Both changes were trivial and are quite apparent by viewing this
+    and the original code.  The makefile was changed only because the
+    executable must be marked to show it supports long filenames.
+    
+    Note: this doesn't handle touching files in other directorys!! 
+        I wanted to copy some code out of the OS/2 ver 1.2 SDK
+        sample program 'FDIR.C' which has a function similar
+        to the DOS style '_splitpath' and '_makepath', but that 
+        would be mixing copyrighted code with public domain code.
+        You can mix the code for your own use, but I'm not putting
+        that sort of hybrid on any BBS.
+
+    This version (3.0) was tested with both OS/1 1.2 and DOS 3.31.    
+    Reed Shilts -- CIS 72500,1647
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+TOUCH.obj : TOUCH.c
+	cl -AS -Lp -Zp1 -Gs -FPa -Oat -c TOUCH.c > TOUCH.err
+	type TOUCH.err
+
+TOUCH.exe : TOUCH.obj
+	cl -AS -Lp -Fb TOUCH -link /ST:6000 doscalls
+    markexe lfns TOUCH.exe
+
